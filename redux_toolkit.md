@@ -13,7 +13,7 @@ npm i @reduxjs/toolkit
 
 - File `src\redux-toolkit\slices\cart.js`
 
-```bash
+```js
 import { createSlice } from "@reduxjs/toolkit";
 
 const cartSlice = createSlice({
@@ -49,7 +49,7 @@ export default cartSlice.reducer;
 
 - File `src\redux-toolkit\store.js`
 
-```bash
+```js
 import { configureStore } from "@reduxjs/toolkit";
 import cart from "./slices/cart";
 
@@ -65,7 +65,7 @@ export default store;
 
 - src\main.jsx
 
-```bash
+```js
 import { Provider } from "react-redux";
 import store from "./redux-toolkit/store.js";
 ```
@@ -74,7 +74,7 @@ import store from "./redux-toolkit/store.js";
 
 - Dispatch
 
-```bash
+```js
 import { useDispatch } from "react-redux";
 import { addCartItem } from "../redux-toolkit/slices/cart";
 dispatch(addCartItem({ item_id, quantity }));
@@ -82,7 +82,7 @@ dispatch(addCartItem({ item_id, quantity }));
 
 - Selector
 
-```bash
+```js
 import { useSelector } from "react-redux";
 const cartItems = useSelector((store) => store.cart.cartItems);
 ```
