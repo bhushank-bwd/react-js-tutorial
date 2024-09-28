@@ -51,3 +51,4 @@
 34. Toaster
 35. Camera and Other Input devices
 36. Social Media Login
+37. Use Guide Tour
