@@ -24,7 +24,7 @@ const queryClient = new QueryClient();
 </QueryClientProvider>
 ```
 
-## List Component
+## Student List Component
 
 1. Import useQuery
 
@@ -51,7 +51,7 @@ if (error) <>{error}</>;
 return <div>{data?.list && data.list.map((item) => <></>)}</div>;
 ```
 
-## Add Component
+## Add Student Component
 
 1. Import useMutation, useQueryClient
 
