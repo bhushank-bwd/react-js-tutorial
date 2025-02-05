@@ -69,6 +69,12 @@ export default store;
 import { Provider } from "react-redux";
 import store from "./redux-toolkit/store.js";
 ```
+- Wrap APP component with in `src\main.jsx`
+```js
+<Provider store={store}>
+    <App />
+</Provider>
+```
 
 ## Usage
 
