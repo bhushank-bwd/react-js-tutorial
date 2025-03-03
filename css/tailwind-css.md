@@ -32,3 +32,30 @@ export default {
 @tailwind components;
 @tailwind utilities;
 ```
+
+## New Installation
+
+# Run Command
+
+```bash
+npm install tailwindcss @tailwindcss/vite
+```
+
+# In `vite.config.js`
+
+```js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+});
+```
+
+# In `src\index.css`
+
+```css
+@import "tailwindcss";
+```
